@@ -38,7 +38,7 @@ function comprar(qtd, link) {
 
   setTimeout(() => {
     window.open(
-      "https://wa.me/5588996444527?text=Acabei de comprar " +
+      "https://wa.me/5588993082035?text=Acabei de comprar " +
       qtd +
       " cotas no Diarista Online e aguardo confirmação por email!"
     );
