@@ -101,6 +101,24 @@ button {
   margin-top: 15px;
   cursor: pointer;
   transition: 0.3s;
+
+  .btn-email {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #0cc0df;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-email:hover {
+  transform: scale(1.05);
+  background: #0aa5c0;
+}
 }
 
 /* HOVER */
