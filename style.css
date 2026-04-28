@@ -131,17 +131,28 @@ button:hover {
 .depoimentos {
   display: flex;
   overflow-x: auto;
-  gap: 10px;
-  padding: 10px;
+  gap: 15px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
 }
 
+/* CARD GRANDE */
 .depoimento {
+  flex: 0 0 45%; /* 2 por vez */
   background: #0cc0df;
   color: white;
-  padding: 15px;
-  border-radius: 12px;
-  min-width: 200px;
-  font-size: 14px;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+}
+
+/* CELULAR = 1 POR VEZ */
+@media (max-width: 600px) {
+  .depoimento {
+    flex: 0 0 80%;
+  }
 }
 
 /* LISTA */
