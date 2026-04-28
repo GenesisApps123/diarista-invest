@@ -4,70 +4,88 @@ body {
   background: #ffffff;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Baloo 2', cursive;
 }
 
 header {
   background: #00bf63;
   color: white;
-  padding: 30px;
   text-align: center;
+  padding: 30px;
 }
 
-section {
-  padding: 30px;
+.escassez {
+  background: #0cc0df;
+  color: white;
   text-align: center;
+  padding: 15px;
+  font-weight: bold;
 }
 
 .planos {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 20px;
-  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .card {
-  background: white;
   border: 2px solid #0cc0df;
   border-radius: 15px;
   padding: 20px;
-  width: 220px;
+  text-align: center;
 }
 
 .destaque {
-  background: #0cc0df;
+  background: #00bf63;
   color: white;
+  transform: scale(1.05);
+}
+
+.tag {
+  background: #ffffff;
+  color: #00bf63;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.preco {
+  font-size: 28px;
+  color: #00bf63;
+  font-weight: bold;
 }
 
 button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
   background: #00bf63;
-  border: none;
-  padding: 10px;
   color: white;
-  border-radius: 8px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
-.escassez {
-  background: #ff5252;
-  color: white;
-  padding: 15px;
-  font-weight: bold;
+button:hover {
+  background: #009e52;
 }
 
 .depoimentos {
   display: flex;
   overflow-x: auto;
-  gap: 15px;
+  gap: 10px;
+  padding: 10px;
 }
 
 .depoimento {
   background: #0cc0df;
   color: white;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
-  min-width: 200px;
+  min-width: 180px;
 }
 
 .lista {
@@ -75,18 +93,18 @@ button {
   overflow-y: scroll;
   background: #f5f5f5;
   padding: 10px;
-  border-radius: 10px;
-  text-align: left;
 }
 
 .aviso {
   background: #fff3cd;
   padding: 15px;
   margin: 20px;
+  border-radius: 10px;
 }
 
 footer {
   background: #00bf63;
   color: white;
+  text-align: center;
   padding: 10px;
 }
