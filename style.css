@@ -160,3 +160,34 @@ footer {
     margin: auto;
   }
 }
+
+/* ITEM INVESTIDOR */
+.investidor {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.investidor img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.investidor span {
+  font-weight: 600;
+  color: #333;
+}
+
+.cotas {
+  margin-left: auto;
+  background: #00bf63;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
