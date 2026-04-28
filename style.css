@@ -29,6 +29,7 @@ header {
 
 /* PLANOS */
 .planos {
+  max-width: 480px;
   display: flex;
   flex-direction: column;
   gap: 20px;
