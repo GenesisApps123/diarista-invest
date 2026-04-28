@@ -136,13 +136,11 @@ button:hover {
 
 .depoimento {
   flex: 0 0 45%;
-  background: #0cc0df;
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
-  font-size: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  scroll-snap-align: start;
+  min-height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza vertical */
 }
 
 @media (max-width: 600px) {
