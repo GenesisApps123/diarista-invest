@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Diarista Online - Invista no App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Invista no Diarista Online</h1>
+  <p>Seja dono de uma parte de um app que já impacta milhares de pessoas</p>
+</header>
+
+<section class="video">
+  <h2>📽️ Entenda o Projeto</h2>
+  <iframe width="100%" height="400"
+    src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+    frameborder="0" allowfullscreen>
+  </iframe>
+</section>
+
+<section class="info">
+  <h2>💡 Sobre o App</h2>
+  <p>
+    O Diarista Online conecta clientes a diaristas em todo o Brasil.
+    Agora você pode adquirir cotas e participar do crescimento do projeto.
+  </p>
+</section>
+
+<section class="planos">
+  <h2>💰 Escolha sua participação</h2>
+
+  <div class="card">
+    <h3>1 Cota</h3>
+    <p>R$ 19,90</p>
+    <button onclick="comprar('LINK_PIX_1')">Comprar</button>
+  </div>
+
+  <div class="card destaque">
+    <h3>10 Cotas</h3>
+    <p>R$ 199,90</p>
+    <button onclick="comprar('LINK_PIX_10')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <h3>100 Cotas</h3>
+    <p>R$ 1.990,00</p>
+    <button onclick="comprar('LINK_PIX_100')">Comprar</button>
+  </div>
+
+</section>
+
+<section class="grafico">
+  <h2>📊 Cotas Vendidas</h2>
+  <canvas id="graficoCotas"></canvas>
+</section>
+
+<section class="aviso">
+  <p>
+    ⚠️ Após o pagamento, seu nome será incluído na lista oficial de cotistas
+    em até 1 dia útil.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 - Diarista Online</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
