@@ -46,7 +46,7 @@ function comprar(qtd, link) {
 }
 
 /* =========================
-   NOVA LISTA DE INVESTIDORES
+   INVESTIDORES
 ========================= */
 
 const investidores = [
@@ -102,7 +102,6 @@ const investidores = [
 {nome:"Paulo Fonseca", cotas:35}
 ];
 
-// RENDER LISTA
 const lista = document.getElementById("lista");
 
 investidores.forEach(pessoa => {
@@ -119,7 +118,7 @@ investidores.forEach(pessoa => {
 });
 
 /* =========================
-   DEPOIMENTOS (mantido)
+   DEPOIMENTOS (CORRIGIDO)
 ========================= */
 
 const depoimentosTexto = [
@@ -130,19 +129,20 @@ const depoimentosTexto = [
   "App incrível!"
 ];
 
+const nomesDepoimentos = [
+  "João Silva","Maria Souza","Carlos Oliveira","Ana Santos","Pedro Costa"
+];
+
 const depoimentosDiv = document.getElementById("depoimentos");
 
 for (let i = 0; i < 20; i++) {
   let d = document.createElement("div");
   d.className = "depoimento";
-  const nomesDepoimentos = [
-  "João Silva","Maria Souza","Carlos Oliveira","Ana Santos","Pedro Costa"
-];
 
-d.innerHTML = `
-  <strong>${nomesDepoimentos[Math.floor(Math.random()*nomesDepoimentos.length)]}</strong><br><br>
-  ${depoimentosTexto[Math.floor(Math.random() * depoimentosTexto.length)]}
-`;
-    depoimentosTexto[Math.floor(Math.random() * depoimentosTexto.length)];
+  d.innerHTML = `
+    <strong>${nomesDepoimentos[Math.floor(Math.random()*nomesDepoimentos.length)]}</strong><br><br>
+    ${depoimentosTexto[Math.floor(Math.random() * depoimentosTexto.length)]}
+  `;
+
   depoimentosDiv.appendChild(d);
 }
