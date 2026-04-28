@@ -45,7 +45,7 @@ header {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* CARD DESTAQUE */
+/* DESTAQUE */
 .destaque {
   background: #00bf63;
   color: white;
@@ -60,25 +60,23 @@ header {
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 12px;
-  display: inline-block;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-/* PREÇO PADRÃO */
+/* PREÇO */
 .preco {
   font-size: 28px;
   color: #00bf63;
   font-weight: bold;
 }
 
-/* 🔥 CORREÇÃO DO PROBLEMA */
 .card.destaque .preco {
   color: #ffffff;
   font-size: 32px;
 }
 
-/* LISTA DE BENEFÍCIOS */
+/* LISTA BENEFÍCIOS */
 .card ul {
   list-style: none;
   padding: 0;
@@ -101,61 +99,14 @@ button {
   margin-top: 15px;
   cursor: pointer;
   transition: 0.3s;
-
-  .btn-email {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 15px 25px;
-  font-size: 18px;
-  font-weight: bold;
-  background: #0cc0df;
-  color: white;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: 0.3s;
 }
 
-.btn-email:hover {
-  transform: scale(1.05);
-  background: #0aa5c0;
-}
-}
-
-/* HOVER */
 button:hover {
   transform: scale(1.05);
   background: linear-gradient(45deg, #00a857, #00c853);
 }
 
-/* DEPOIMENTOS */
-.depoimentos {
-  display: flex;
-  overflow-x: auto;
-  gap: 15px;
-  padding: 20px;
-  scroll-snap-type: x mandatory;
-}
-
-/* CARD GRANDE */
-.depoimento {
-  flex: 0 0 45%; /* 2 por vez */
-  background: #0cc0df;
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
-  font-size: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  scroll-snap-align: start;
-}
-
-/* CELULAR = 1 POR VEZ */
-@media (max-width: 600px) {
-  .depoimento {
-    flex: 0 0 80%;
-  }
-}
-
-/* LISTA */
+/* BOTÃO EMAIL */
 .btn-email {
   display: inline-block;
   margin-top: 10px;
@@ -174,6 +125,63 @@ button:hover {
   background: #0aa5c0;
 }
 
+/* DEPOIMENTOS */
+.depoimentos {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.depoimento {
+  flex: 0 0 45%;
+  background: #0cc0df;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+}
+
+@media (max-width: 600px) {
+  .depoimento {
+    flex: 0 0 80%;
+  }
+}
+
+/* LISTA INVESTIDORES */
+.lista {
+  max-height: 400px;
+  overflow-y: auto;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.investidor {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+}
+
+.investidor img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.cotas {
+  margin-left: auto;
+  background: #00bf63;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
 /* AVISO */
 .aviso {
   background: #fff3cd;
@@ -189,43 +197,4 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
-}
-
-/* RESPONSIVO (PC) */
-@media (min-width: 768px) {
-  .planos {
-    max-width: 500px;
-    margin: auto;
-  }
-}
-
-/* ITEM INVESTIDOR */
-.investidor {
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  padding: 10px;
-  margin-bottom: 8px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.investidor img {
-  width: 35px;
-  height: 35px;
-  margin-right: 10px;
-}
-
-.investidor span {
-  font-weight: 600;
-  color: #333;
-}
-
-.cotas {
-  margin-left: auto;
-  background: #00bf63;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 8px;
-  font-size: 12px;
 }
