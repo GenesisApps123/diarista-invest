@@ -151,8 +151,9 @@ button:hover {
 
 /* LISTA INVESTIDORES */
 .lista {
-  max-height: 400px;
-  overflow-y: auto;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .investidor {
