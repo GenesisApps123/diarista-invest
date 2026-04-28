@@ -4,10 +4,12 @@ body {
   background: #ffffff;
 }
 
+/* TÍTULOS */
 h1, h2 {
   font-family: 'Baloo 2', cursive;
 }
 
+/* HEADER */
 header {
   background: #00bf63;
   color: white;
@@ -15,14 +17,17 @@ header {
   padding: 30px;
 }
 
+/* ESCASSEZ */
 .escassez {
   background: #0cc0df;
   color: white;
   text-align: center;
   padding: 15px;
   font-weight: bold;
+  font-size: 18px;
 }
 
+/* PLANOS */
 .planos {
   display: flex;
   flex-direction: column;
@@ -30,49 +35,81 @@ header {
   padding: 20px;
 }
 
+/* CARD */
 .card {
   border: 2px solid #0cc0df;
   border-radius: 15px;
   padding: 20px;
   text-align: center;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
+/* CARD DESTAQUE */
 .destaque {
   background: #00bf63;
   color: white;
   transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,191,99,0.4);
 }
 
+/* TAG */
 .tag {
   background: #ffffff;
   color: #00bf63;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
   font-size: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
+/* PREÇO PADRÃO */
 .preco {
   font-size: 28px;
   color: #00bf63;
   font-weight: bold;
 }
 
+/* 🔥 CORREÇÃO DO PROBLEMA */
+.card.destaque .preco {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+/* LISTA DE BENEFÍCIOS */
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  margin: 8px 0;
+}
+
+/* BOTÃO */
 button {
   width: 100%;
-  padding: 15px;
+  padding: 18px;
   font-size: 18px;
-  background: #00bf63;
+  font-weight: bold;
+  background: linear-gradient(45deg, #00bf63, #00e676);
   color: white;
   border: none;
-  border-radius: 10px;
-  margin-top: 10px;
+  border-radius: 12px;
+  margin-top: 15px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
+/* HOVER */
 button:hover {
-  background: #009e52;
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #00a857, #00c853);
 }
 
+/* DEPOIMENTOS */
 .depoimentos {
   display: flex;
   overflow-x: auto;
@@ -83,28 +120,43 @@ button:hover {
 .depoimento {
   background: #0cc0df;
   color: white;
-  padding: 10px;
-  border-radius: 10px;
-  min-width: 180px;
+  padding: 15px;
+  border-radius: 12px;
+  min-width: 200px;
+  font-size: 14px;
 }
 
+/* LISTA */
 .lista {
   height: 200px;
   overflow-y: scroll;
   background: #f5f5f5;
   padding: 10px;
+  border-radius: 10px;
+  text-align: left;
 }
 
+/* AVISO */
 .aviso {
   background: #fff3cd;
   padding: 15px;
   margin: 20px;
   border-radius: 10px;
+  font-weight: bold;
 }
 
+/* FOOTER */
 footer {
   background: #00bf63;
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+/* RESPONSIVO (PC) */
+@media (min-width: 768px) {
+  .planos {
+    max-width: 500px;
+    margin: auto;
+  }
 }
