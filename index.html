@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+
 <title>Diarista Online - Invista</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -9,19 +10,13 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
+
 <body>
 
 <header>
   <h1>Invista no Diarista Online</h1>
-  <p>Adquira cotas de um app em crescimento nacional</p>
+  <p>Adquira cotas antes que acabem</p>
 </header>
-
-<section>
-  <h2>📽️ Conheça o projeto</h2>
-  <iframe width="100%" height="400"
-    src="https://www.youtube.com/embed/SEU_VIDEO_AQUI">
-  </iframe>
-</section>
 
 <section class="escassez">
   🔥 FALTAM APENAS <span id="restantes">5</span> COTAS A ESSE PREÇO!
@@ -29,44 +24,75 @@
 
 <section class="planos">
 
+<!-- PLANO 1 -->
 <div class="card">
-  <h3>1 Cota</h3>
-  <p>R$19,90</p>
-  <button onclick="comprar(1, 'LINK_PIX_1')">Comprar</button>
+  <h2>1 Cota</h2>
+  <p class="preco">R$19,90</p>
+
+  <ul>
+    <li>✔ Entrada mínima</li>
+    <li>✔ Acesso ao grupo</li>
+    <li>✔ Participação inicial</li>
+  </ul>
+
+  <button onclick="comprar(1, 'LINK_PIX_1')">
+    COMPRAR AGORA
+  </button>
 </div>
 
+<!-- PLANO 2 -->
 <div class="card destaque">
-  <h3>10 Cotas</h3>
-  <p>R$199,90</p>
-  <button onclick="comprar(10, 'LINK_PIX_10')">Comprar</button>
+  <span class="tag">MAIS VENDIDO</span>
+  <h2>10 Cotas</h2>
+  <p class="preco">R$199,90</p>
+
+  <ul>
+    <li>✔ Maior participação</li>
+    <li>✔ Prioridade futura</li>
+    <li>✔ Mais retorno potencial</li>
+  </ul>
+
+  <button onclick="comprar(10, 'LINK_PIX_10')">
+    QUERO 10 COTAS
+  </button>
 </div>
 
+<!-- PLANO 3 -->
 <div class="card">
-  <h3>100 Cotas</h3>
-  <p>R$1.990,00</p>
-  <button onclick="comprar(100, 'LINK_PIX_100')">Comprar</button>
+  <h2>100 Cotas</h2>
+  <p class="preco">R$1.990,00</p>
+
+  <ul>
+    <li>✔ Alta participação</li>
+    <li>✔ Destaque como investidor</li>
+    <li>✔ Máximo potencial de ganho</li>
+  </ul>
+
+  <button onclick="comprar(100, 'LINK_PIX_100')">
+    INVESTIR FORTE
+  </button>
 </div>
 
 </section>
 
 <section>
-  <h2>📊 Progresso das cotas</h2>
+  <h2>📊 Progresso</h2>
   <canvas id="grafico"></canvas>
-  <p><strong id="contador"></strong> cotas já adquiridas</p>
+  <p><strong id="contador"></strong> cotas adquiridas</p>
 </section>
 
 <section>
-  <h2>💬 Quem já comprou</h2>
+  <h2>💬 Depoimentos</h2>
   <div class="depoimentos" id="depoimentos"></div>
 </section>
 
 <section>
-  <h2>👥 Investidores</h2>
+  <h2>👥 Investidores recentes</h2>
   <div class="lista" id="lista"></div>
 </section>
 
 <section class="aviso">
-  ⚠️ Após o pagamento, você receberá um email do Diarista Online confirmando sua compra.
+  ⚠️ Após o pagamento, você receberá um email confirmando sua compra em até 1 dia útil.
 </section>
 
 <footer>
